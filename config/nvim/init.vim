@@ -33,6 +33,7 @@ highlight SpecialKey guifg=#4a4a59
 
 call plug#begin()
 
+Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
 
 call plug#end()
