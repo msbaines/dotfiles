@@ -1,0 +1,21 @@
+[include]
+	path = config.local
+[merge]
+	conflictstyle = diff3
+[color]
+	ui = auto
+[core]
+	pager = less -+$LESS -RX
+	excludesfile = ~/.gitignore
+[alias]
+	b = branch -v
+	ch = checkout
+	cp = cherry-pick
+	dc = describe --contains
+	d = diff
+	fb = format-patch -k -M -N
+	a = commit -a --amend -C HEAD
+	up = !repo upload --cbr .
+	sync = !repo sync .
+	ab = "!f() { repo abandon $(basename $(git symbolic-ref HEAD)) .; }; f"
+	start = checkout -t origin/master -b
