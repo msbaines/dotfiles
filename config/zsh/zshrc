@@ -47,6 +47,8 @@ source /etc/profile
 # Mandeep's stuff
 alias q='nvr --remote'
 export VISUAL="nvr --remote-wait"
+# disable rm prompt
+setopt rm_star_silent
 # vim bindings
 bindkey -v
 
